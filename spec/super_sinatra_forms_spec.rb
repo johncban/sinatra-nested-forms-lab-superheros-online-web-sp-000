@@ -27,7 +27,7 @@ describe App do
       fill_in("member2_power", :with => "JavaScript")
       fill_in("member2_bio", :with => "I love JavaScript!")
       fill_in("member3_name", :with => "Katie")
-      fill_in("member3_power", :with => "Ruby")
+      fill_in("member3_power", :with => "Sinatra")
       fill_in("member3_bio", :with => "I love Sinatra!")
       click_button 'submit'
 
@@ -40,7 +40,7 @@ describe App do
       expect(page).to have_text("Hero Power: JavaScript")
       expect(page).to have_text("Hero Biography: I love JavaScript!")
       expect(page).to have_text("Hero Name: Katie")
-      expect(page).to have_text("Hero Power: Ruby")
+      expect(page).to have_text("Hero Power: Sinatra")
       expect(page).to have_text("Hero Biography: I love Sinatra!")
     end
   end
